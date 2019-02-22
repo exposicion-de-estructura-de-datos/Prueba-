@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class JavaApplication2 {
 
     public static void main(String[] args) {
-        Scanner Leer = new Scanner(System.in);
+        Scanner captura = new Scanner(System.in);
         int edad;
         String genero;
 
@@ -17,7 +17,7 @@ public class JavaApplication2 {
         genero = Leer.next();
         if (genero.equals("M")) {
             System.out.println("Digite su edad");
-            edad = Leer.nextInt();
+            edad = captura.nextInt();
             if (edad >= 18) {
                 System.out.println("Bienvenido al ejercito nacional");
             } else {
